@@ -1,0 +1,56 @@
+name: "[Studied] Paper or study"
+description: "Track a study, preprint, review, or experiment that materially changes the map."
+title: "[Studied]: "
+labels:
+  - "[Studied]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a **specific study** deserves its own tracking issue.
+        Submission requires the citation, design, main finding, and the key limitation.
+  - type: input
+    id: citation
+    attributes:
+      label: Citation or direct link
+      description: Link the paper, preprint, DOI, or PubMed entry.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Study design or model
+      description: Summarize the cohort, model organism, cell system, or experimental setup.
+      placeholder: Describe who/what was studied and how.
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Main finding
+      description: State the result that matters for menopause biology or intervention logic.
+      placeholder: Pull out the strongest relevant signal, not the whole abstract.
+    validations:
+      required: true
+  - type: textarea
+    id: limitation
+    attributes:
+      label: Biggest limitation or translation gap
+      description: What keeps this from being a clean decision point?
+      placeholder: Note the weakest assumption, missing replication, or species-to-human gap.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence-level
+    attributes:
+      label: Evidence level
+      options:
+        - Human clinical / cohort
+        - Human tissue / ex vivo
+        - Animal model
+        - Cell / in vitro
+        - Review / meta-analysis
+        - Preprint / early signal
+    validations:
+      required: true

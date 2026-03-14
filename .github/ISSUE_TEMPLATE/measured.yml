@@ -1,0 +1,51 @@
+name: "[Measured] Data point"
+description: "Submit a measured value, assay result, cohort statistic, or observed delta."
+title: "[Measured]: "
+labels:
+  - "[Measured]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when you have an **actual measurement** or observed result.
+        Submission requires the metric, measurement context, reported value, and uncertainty.
+  - type: input
+    id: metric
+    attributes:
+      label: Metric or assay
+      description: Name the measured value.
+      placeholder: e.g. AMH, FSH, follicle count, cortisol slope, ovarian volume
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Measurement method and context
+      description: How was it measured, and in what setting?
+      placeholder: Include assay type, sampling conditions, population/cohort, and timeframe.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Reported result
+      description: Give the observed value, direction, or effect size.
+      placeholder: Include units, deltas, confidence intervals, or statistical signal if available.
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: Uncertainty, limitations, or confounders
+      description: What makes this measurement stronger or weaker?
+      placeholder: Mention sample size, missing controls, confounders, instrument limits, or reporting gaps.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source or dataset link
+      description: Link the paper, repository, dashboard, or source record.
+      placeholder: https://...
+    validations:
+      required: true

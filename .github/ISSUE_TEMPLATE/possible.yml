@@ -1,0 +1,56 @@
+name: "[Possible] Candidate lead"
+description: "Propose a mechanism, target, or intervention that looks plausible but still needs triage."
+title: "[Possible]: "
+labels:
+  - "[Possible]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when something looks **mechanistically plausible** and worth tracking.
+        Submission requires a clear claim, an evidence anchor, and the main unresolved gap.
+  - type: input
+    id: claim
+    attributes:
+      label: Candidate mechanism or intervention
+      description: State the lead in one sentence.
+      placeholder: e.g. Chronic CRH suppression may accelerate reserve loss through ovarian steroidogenic disruption.
+    validations:
+      required: true
+  - type: textarea
+    id: why-it-matters
+    attributes:
+      label: Why it could matter
+      description: Explain the menopause-relevant mechanism or bottleneck.
+      placeholder: Describe the pathway, bottleneck, or biological reason this lead deserves attention.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence-anchor
+    attributes:
+      label: Evidence anchor
+      description: Link the strongest source, paper, dataset, or observation you have.
+      placeholder: Add URLs, citations, or concrete observations.
+    validations:
+      required: true
+  - type: textarea
+    id: falsifier
+    attributes:
+      label: Main uncertainty or falsifier
+      description: What would weaken, disprove, or sharply downgrade this lead?
+      placeholder: Name the biggest unknown, counterargument, or failure mode.
+    validations:
+      required: true
+  - type: dropdown
+    id: relevance
+    attributes:
+      label: Primary relevance
+      options:
+        - Ovarian reserve depletion
+        - POI / early menopause
+        - Stress-axis disruption
+        - DNA repair / oxidative damage
+        - Autoimmune / inflammatory burden
+        - Other
+    validations:
+      required: true

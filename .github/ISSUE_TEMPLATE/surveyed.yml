@@ -1,0 +1,51 @@
+name: "[Surveyed] Landscape scan"
+description: "Capture a broader scan across targets, companies, literature clusters, or intervention classes."
+title: "[Surveyed]: "
+labels:
+  - "[Surveyed]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when you have a **research sweep** rather than a single finding.
+        Submission requires the survey scope, search method, strongest patterns, and open gaps.
+  - type: input
+    id: scope
+    attributes:
+      label: Survey scope
+      description: What exactly did you scan?
+      placeholder: e.g. ovarian aging startups, rapamycin reserve papers, BRCA-related ovarian reserve studies
+    validations:
+      required: true
+  - type: textarea
+    id: search-strategy
+    attributes:
+      label: Search strategy and sources
+      description: Describe databases, keywords, repositories, or filters used.
+      placeholder: List where you looked and how you filtered the field.
+    validations:
+      required: true
+  - type: textarea
+    id: strongest-patterns
+    attributes:
+      label: Strongest patterns or top candidates
+      description: Summarize the highest-signal takeaways.
+      placeholder: Give the shortlist, repeated mechanisms, or most credible names.
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: Missing pieces or underexplored gaps
+      description: What did the survey fail to resolve?
+      placeholder: Call out the blind spots, contradictory areas, or obvious next sweep.
+    validations:
+      required: true
+  - type: input
+    id: links
+    attributes:
+      label: Supporting links
+      description: Add a representative source list or document link.
+      placeholder: https://...
+    validations:
+      required: true

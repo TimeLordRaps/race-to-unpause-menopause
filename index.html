@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>menopaused — the race to unpause</title>
+  <meta name="description" content="A living GitHub Pages site tracking the race to understand, slow, and someday reverse the biological pause called menopause." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header shell">
+    <div class="brand-row">
+      <a class="brand" href="#top">menopaused</a>
+      <nav class="top-nav">
+        <a href="#mission">mission</a>
+        <a href="#scoreboard">scoreboard</a>
+        <a href="#evidence">evidence</a>
+        <a href="#updates">updates</a>
+        <a href="#contribute">contribute</a>
+        <a href="#focus">focus</a>
+        <a href="#map">map</a>
+        <a href="#sources">sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero">
+      <div class="eyebrow">github pages • living research front page</div>
+      <h1>The race to <span>unpause menopaused</span></h1>
+      <p class="hero-copy">
+        A public-facing home for the project: what matters, what moved this week, what pathways look promising,
+        what the current race board says, and what the sources actually justify. The tone is simple: not vibes,
+        not miracle powder, not theater — mechanism.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#updates">See latest updates</a>
+        <a class="btn btn-secondary" href="#scoreboard">Open the scoreboard</a>
+        <a class="btn btn-secondary" href="#sources">Open the source digest</a>
+      </div>
+      <div id="hero-stats" class="stat-grid"></div>
+    </section>
+
+    <section id="mission" class="panel two-col">
+      <div>
+        <div class="section-tag">why this exists</div>
+        <h2>Make menopause legible, tractable, and eventually interruptible.</h2>
+        <p>
+          Menopause is usually framed as a passive inevitability. This site treats it as a biological state transition
+          with measurable pathways: ovarian reserve depletion, DNA damage load, stress-axis disruption, inflammatory damage,
+          mitochondrial failure, fibrosis, genotype-specific risk, and the feedback loops around them.
+        </p>
+        <p>
+          The goal is not fake certainty. The goal is a fast, updateable front page for the strongest mechanisms,
+          the most serious targets, the known limits, and the current state of the race.
+        </p>
+      </div>
+      <div class="quote-card">
+        <div class="quote-label">current frame</div>
+        <blockquote id="framing-quote"></blockquote>
+      </div>
+    </section>
+
+    <section id="scoreboard" class="panel">
+      <div class="section-tag">where the race stands</div>
+      <div class="panel-head">
+        <h2>Race board</h2>
+        <p>Editable from JSON. Keep the front page current without touching layout code.</p>
+      </div>
+      <div id="scoreboard-grid" class="scoreboard-grid"></div>
+    </section>
+
+    <section id="evidence" class="panel two-col evidence-layout">
+      <div>
+        <div class="section-tag">evidence discipline</div>
+        <h2>Evidence bands</h2>
+        <p>
+          Mechanism matters, but human replication outranks elegant stories. The board should say what is actually known,
+          not what sounds like a trailer voice-over.
+        </p>
+        <div id="evidence-legend" class="legend-grid"></div>
+      </div>
+      <aside class="side-panel">
+        <div class="section-tag">hard constraints</div>
+        <h3>What the site refuses to pretend</h3>
+        <div id="known-constraints" class="constraint-list"></div>
+      </aside>
+    </section>
+
+    <section id="updates" class="panel">
+      <div class="section-tag">recent movement</div>
+      <div class="panel-head">
+        <h2>Live updates</h2>
+        <p>Each entry is just data. Add a new object to <code>data/site-data.json</code> and the page updates itself.</p>
+      </div>
+      <div id="updates-list" class="updates-list"></div>
+    </section>
+
+    <section id="contribute" class="panel two-col contribute-layout">
+      <div>
+        <div class="section-tag">structured intake</div>
+        <h2>Submit leads through the right issue lane</h2>
+        <p>
+          Four intake tracks keep mechanism, measurement, literature, and landscape scans separated.
+          Each route opens a prefilled GitHub issue form with required fields, so low-signal fog has to do cardio before it gets in.
+        </p>
+        <div id="issue-track-list" class="issue-track-grid"></div>
+      </div>
+      <aside class="side-panel">
+        <div class="section-tag">submission rule</div>
+        <h3>Required before submit</h3>
+        <p>
+          Every form asks for the claim, the mechanism or measurement behind it, the evidence anchor, and the unresolved gap.
+          That keeps the public board sortable instead of turning into supplement-ad improv.
+        </p>
+        <p id="issue-repo-note" class="small-note">
+          Issue links will auto-resolve on GitHub Pages or can use a configured repository URL.
+        </p>
+      </aside>
+    </section>
+
+    <section id="focus" class="panel two-col focus-layout">
+      <div>
+        <div class="section-tag">what matters now</div>
+        <h2>Priority pathways</h2>
+        <div id="pathway-list" class="pathway-list"></div>
+      </div>
+      <aside class="side-panel">
+        <div class="section-tag">editing loop</div>
+        <ol class="edit-steps">
+          <li>Edit <code>data/site-data.json</code>.</li>
+          <li>Regenerate <code>data/site-data.js</code> from the JSON source of truth.</li>
+          <li>Commit and push to GitHub.</li>
+          <li>GitHub Pages republishes automatically.</li>
+        </ol>
+        <p class="small-note">
+          Keep claims tight. Distinguish mechanism, evidence level, diagnostic utility, and speculation. If the explanation gets larger
+          than the evidence, shrink the explanation first.
+        </p>
+      </aside>
+    </section>
+
+    <section id="map" class="panel">
+      <div class="section-tag">operational map</div>
+      <div class="panel-head">
+        <h2>What to measure and what accelerates loss</h2>
+        <p>Diagnostic signals, reserve accelerants, and triage lanes kept in one place.</p>
+      </div>
+      <div class="map-grid">
+        <div>
+          <h3 class="subsection-title">Diagnostic and triage signals</h3>
+          <div id="diagnostic-signal-list" class="signal-grid"></div>
+        </div>
+        <div>
+          <h3 class="subsection-title">Major accelerants</h3>
+          <div id="risk-accelerant-list" class="accelerant-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interventions" class="panel">
+      <div class="section-tag">intervention landscape</div>
+      <div class="panel-head">
+        <h2>What exists now versus what is still experimental</h2>
+        <p>Separate symptom control, operational triage, and truly experimental reserve-rescue ideas.</p>
+      </div>
+      <div id="intervention-list" class="intervention-grid"></div>
+    </section>
+
+    <section id="questions" class="panel two-col">
+      <div>
+        <div class="section-tag">open questions</div>
+        <h2>The problems worth solving next</h2>
+        <p>
+          These are the questions that move the board if answered, not just the ones that make for good podcast clips.
+        </p>
+        <div id="research-question-list" class="question-list"></div>
+      </div>
+      <aside class="side-panel">
+        <div class="section-tag">promotion rules</div>
+        <h3>When something earns a promotion</h3>
+        <div id="promotion-rule-list" class="constraint-list"></div>
+      </aside>
+    </section>
+
+    <section id="sources" class="panel">
+      <div class="section-tag">source digest</div>
+      <div class="panel-head">
+        <h2>Anchor sources</h2>
+        <p>Keep the front page traceable to concrete papers, reviews, and guidelines rather than recycled folklore.</p>
+      </div>
+      <div id="source-digest" class="source-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div>
+      <strong>menopaused</strong> — a living front page for the race to unpause menopause.
+    </div>
+    <div class="footer-note">For research tracking and public updates. Not medical advice.</div>
+  </footer>
+
+  <script src="./data/site-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
