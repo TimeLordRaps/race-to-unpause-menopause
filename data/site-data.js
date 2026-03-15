@@ -48,6 +48,11 @@ window.SITE_DATA = {
       "label": "birth floor via donor egg",
       "value": "~40–50% / cycle",
       "note": "IVF with donor eggs maintains a live birth rate near 40–50% per cycle largely independent of recipient age or reserve, acting as a defined floor for women whose own oocytes are depleted."
+    },
+    {
+      "label": "UTx live births globally",
+      "value": "80+ confirmed",
+      "note": "Uterine transplantation has produced over 80 confirmed live births worldwide across Gothenburg, Cleveland Clinic, Baylor, and other centers. It is the most tested path to gestational capacity restoration after uterine loss."
     }
   ],
   "scoreboard": [
@@ -134,9 +139,59 @@ window.SITE_DATA = {
       "value": "OTC + referral timing",
       "note": "Ovarian tissue cryopreservation is now a non-experimental standard for patients facing gonadotoxic therapy. The bottleneck is referral speed before treatment begins, not the biology itself.",
       "priority": "High"
+    },
+    {
+      "label": "Gestational capacity restoration",
+      "value": "Uterine transplant (UTx)",
+      "note": "For women who have lost uterine function to hysterectomy, cancer treatment, or congenital absence, uterine transplantation is the only pathway to carrying a pregnancy. Over 80 live births globally confirm the technology works; the bottleneck is access, donor supply, and surgical center density.",
+      "priority": "Medium"
+    },
+    {
+      "label": "Rising iatrogenic uterine loss",
+      "value": "Placenta accreta spectrum",
+      "note": "Placenta accreta spectrum (PAS) incidence now approaches 1 in 300 pregnancies and tracks directly with cumulative C-section history. PAS is the leading cause of emergency peripartum hysterectomy and creates the largest preventable pool of uterine loss in the developed world.",
+      "priority": "High"
     }
   ],
   "updates": [
+    {
+      "date": "2026-03-14",
+      "title": "Uterine transplantation: 80+ live births, multiple established centers",
+      "body": "Uterine transplantation (UTx) is no longer experimental for the core indication: absolute uterine factor infertility (AUFI) from hysterectomy, congenital uterine absence (MRKH), or treatment for gynecologic cancers including ovarian and cervical cancer. The Gothenburg group completed the first live birth in 2014. As of 2025, over 80 confirmed live births have been reported globally across centers including Cleveland Clinic, Baylor University Medical Center, and multiple European programs. UTx is a temporary organ — the uterus is removed after one or two completed pregnancies to end immunosuppression. It is the only current pathway for carrying a pregnancy after uterine loss, and it is distinct from the reserve problem: UTx addresses gestational capacity, not ovarian reserve or oocyte supply.",
+      "signal": "High",
+      "tags": [
+        "uterine transplant",
+        "UTx",
+        "AUFI",
+        "gestational capacity",
+        "post-cancer"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "title": "Placenta accreta spectrum: C-section history is creating the uterine loss pool",
+      "body": "Placenta accreta spectrum (PAS) — where the placenta abnormally adheres to or invades the uterine wall — now occurs in approximately 1 in 300 pregnancies and its incidence has risen in near-lockstep with cumulative C-section rates. PAS is the leading cause of emergency peripartum hysterectomy in the developed world. Women with one prior C-section face roughly 0.3% PAS risk; with four or more prior C-sections the risk exceeds 6%. The prevention equation is straightforward: reducing unnecessary first C-sections reduces the PAS pipeline. The restoration equation, once uterine loss has occurred, is uterine transplantation. Both ends of this problem are now addressable.",
+      "signal": "High",
+      "tags": [
+        "C-section",
+        "placenta accreta",
+        "PAS",
+        "hysterectomy",
+        "uterine loss"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "title": "Uterine transplantation for transwomen: early experimental, no confirmed births yet",
+      "body": "Uterine transplantation has been discussed and in limited cases attempted in transwomen, for whom it represents the only biological path to gestational capacity. As of early 2026, no confirmed live birth from UTx in a transwoman has been reported in the peer-reviewed literature. The additional complexity is real: male pelvic anatomy requires surgical adaptation, vascular anastomosis targets differ, a functional neovagina is a prerequisite, and the hormonal environment of feminizing HRT must be compatible with pregnancy maintenance and immunosuppression. WPATH Standards of Care v8 describe UTx in transwomen as an emerging area warranting research. The honest position: the underlying mechanism (UTx) is validated in cisgender women with AUFI; its application to transwomen is a logical extension currently in early experimental territory. Tracking it belongs here because the same transplant biology applies.",
+      "signal": "Low",
+      "tags": [
+        "uterine transplant",
+        "transwomen",
+        "experimental",
+        "gestational capacity"
+      ]
+    },
     {
       "date": "2026-03-14",
       "title": "Donor egg IVF is the floor below the floor",
@@ -574,6 +629,13 @@ window.SITE_DATA = {
       "strength": "Low",
       "mechanism": "Smoking and other toxic insults may add oxidative and follicular damage on top of the baseline trajectory.",
       "note": "Important to track, but often harder to quantify cleanly than genetics or iatrogenic injury."
+    },
+    {
+      "name": "Placenta accreta spectrum (PAS)",
+      "layer": "iatrogenic / surgical",
+      "strength": "High",
+      "mechanism": "Abnormal placental invasion caused by prior uterine scarring, most commonly from C-sections. Incidence now ~1 in 300 pregnancies in high C-section rate populations; risk compounds with each additional C-section. Leading cause of emergency peripartum hysterectomy, eliminating all future gestational capacity.",
+      "note": "Prevention is upstream: unnecessary primary C-sections create the scar that drives the next cycle. Once PAS occurs and hysterectomy is required, uterine transplantation is the only restoration pathway."
     }
   ],
   "interventionLandscape": [
@@ -646,6 +708,20 @@ window.SITE_DATA = {
       "evidence": "Low",
       "role": "Often marketed as rescue or regeneration routes for ovarian function.",
       "ceiling": "Evidence remains fragmented and nowhere near justification for strong public claims."
+    },
+    {
+      "name": "Uterine transplantation (UTx)",
+      "status": "emerging clinical",
+      "evidence": "Medium",
+      "role": "Restores gestational capacity in women with absolute uterine factor infertility (AUFI): congenital uterine absence (MRKH), post-hysterectomy from any cause including gynecologic cancer, and uterine loss from C-section complications such as placenta accreta spectrum. Over 80 live births globally confirmed across Gothenburg, Cleveland Clinic, and Baylor programs. UTx does not restore ovarian reserve — the recipient still needs viable oocytes (own or donor) for IVF. It is a temporary organ: removed after one or two pregnancies to end immunosuppression.",
+      "ceiling": "Requires IVF, lifelong immunosuppression during gestation, living or deceased donor availability, and high-volume surgical center access. Not yet widely available. Application to transwomen remains early experimental with no confirmed live births reported as of 2026."
+    },
+    {
+      "name": "C-section rate reduction as uterine preservation",
+      "status": "prevention standard",
+      "evidence": "High",
+      "role": "Placenta accreta spectrum (PAS) risk accumulates directly with each C-section: approximately 0.3% after one, rising above 6% after four or more. Since PAS is the leading cause of emergency peripartum hysterectomy, avoiding unnecessary primary C-sections is the most upstream intervention for preserving gestational capacity across future pregnancies.",
+      "ceiling": "Applies to preventing uterine loss, not restoring it. Does not address congenital or oncologic causes of AUFI."
     }
   ],
   "promotionRules": [
@@ -725,9 +801,35 @@ window.SITE_DATA = {
       "tier": "Tier 3",
       "question": "What is the minimum evidence threshold required before the site upgrades an intervention from watchlist to serious contender?",
       "whyItMatters": "A public-facing board becomes useless if promotion rules are vague."
+    },
+    {
+      "tier": "Tier 2",
+      "question": "What surgical adaptations and hormonal protocols are required to make uterine transplantation viable in transwomen, and what is the minimum evidence bar before labeling it anything other than experimental?",
+      "whyItMatters": "The underlying biology of UTx is established in cisgender women. Whether and how it translates to transwomen depends on pelvic anatomy, vascular targets, neovaginal environment, and HRT-pregnancy hormone compatibility. The question is not whether to track it — it is what the honest evidence threshold looks like."
+    },
+    {
+      "tier": "Tier 2",
+      "question": "At what PAS risk level should patients be counseled about oocyte or embryo banking before surgery, to preserve the parallel birth pathway if hysterectomy becomes necessary?",
+      "whyItMatters": "PAS management often culminates in unplanned hysterectomy. Reproductive counseling before cancer treatment or high-risk obstetric surgery is well-established; extending that counseling protocol to women with known high PAS risk (multiple prior C-sections, prior PAS, placenta previa) could preserve birth options before the window closes."
     }
   ],
   "sourceDigest": [
+    {
+      "topic": "Uterine transplantation outcomes",
+      "kind": "Review",
+      "date": "2023-09-01",
+      "citation": "Uterus transplantation: current status and future directions (Brannstrom et al., Fertility and Sterility 2023)",
+      "url": "https://www.fertstert.org/article/S0015-0282(23)00465-X/fulltext",
+      "takeaway": "Summarizes the first decade of clinical UTx, covering over 90 transplants and 80+ live births across multiple international centers. Establishes UTx as a feasible option for AUFI from any cause including post-oncologic hysterectomy and MRKH, and outlines the remaining barriers: donor supply, surgical complexity, and immunosuppression safety during gestation."
+    },
+    {
+      "topic": "Placenta accreta spectrum and C-section risk",
+      "kind": "Systematic review",
+      "date": "2020-07-01",
+      "citation": "Placenta accreta spectrum: a systematic review of prevalence and risk factors (Jauniaux et al., AJOG 2020)",
+      "url": "https://www.ajog.org/article/S0002-9378(19)31138-7/fulltext",
+      "takeaway": "Documents PAS prevalence at approximately 1 in 300 pregnancies in high-resource settings and quantifies the exponential risk increase with prior C-section count. Establishes the mechanistic link between uterine scarring from cesarean delivery and subsequent placental invasion, making PAS the primary preventable pathway to emergency peripartum hysterectomy."
+    },
     {
       "topic": "Ovarian tissue cryopreservation",
       "kind": "Practice guideline",
