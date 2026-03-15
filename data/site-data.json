@@ -568,84 +568,96 @@
       "status": "clinical standard",
       "evidence": "High",
       "role": "Treats menopausal or POI-related symptoms and can help protect bone and broader health in appropriate patients.",
-      "ceiling": "It does not regenerate follicles or restore ovarian reserve."
+      "ceiling": "It does not regenerate follicles or restore ovarian reserve.",
+      "cost": "$10\u2013$150/month out of pocket depending on formulation and insurance coverage. Generic transdermal estrogen and progesterone are the cheapest access point; brand-name patches and gels run higher. Most insurance plans cover at least one formulation."
     },
     {
       "name": "Early fertility preservation and counseling",
       "status": "operational standard",
       "evidence": "High",
       "role": "When elevated risk is identified early, preserving options can matter more than waiting for perfect mechanistic clarity.",
-      "ceiling": "It preserves choices rather than reversing the underlying biology."
+      "ceiling": "It preserves choices rather than reversing the underlying biology.",
+      "cost": "Counseling alone: $200\u2013$500 per specialist visit; often covered under preventive care. Downstream cost depends entirely on the preservation route chosen. The counseling itself is the lowest-cost, highest-leverage intervention on this board."
     },
     {
       "name": "Ovarian tissue cryopreservation (OTC)",
       "status": "operational standard",
       "evidence": "High",
       "role": "OTC is now a non-experimental option for pre-pubertal patients and adults who cannot delay gonadotoxic therapy. Over 200 live births have been reported globally from transplanted ovarian tissue; the procedure is performed at specialist centers worldwide.",
-      "ceiling": "Re-implantation carries a theoretical risk of reintroducing malignant cells in certain diagnoses. Requires expedited specialist referral before treatment \u2014 timing is the critical operational variable."
+      "ceiling": "Re-implantation carries a theoretical risk of reintroducing malignant cells in certain diagnoses. Requires expedited specialist referral before treatment \u2014 timing is the critical operational variable.",
+      "cost": "$10,000\u2013$15,000 for the retrieval and initial processing; $300\u2013$600/year for ongoing storage. Re-implantation surgery adds $5,000\u2013$10,000. Some oncofertility programs at academic centers offer reduced fees; insurance coverage is inconsistent but improving as ASRM's non-experimental designation takes hold."
     },
     {
       "name": "Donor egg IVF",
       "status": "clinical standard",
       "evidence": "High",
       "role": "When ovarian reserve is depleted or oocyte quality is insufficient, donor egg IVF maintains a live birth rate of roughly 40\u201350% per cycle largely independent of recipient age. It is the most reliable birth-floor mechanism currently available for women past their own reserve.",
-      "ceiling": "It bypasses the genetic contribution of the birth parent. Does not address reserve depletion, restore ovarian function, or extend the window \u2014 it defines the floor below it."
+      "ceiling": "It bypasses the genetic contribution of the birth parent. Does not address reserve depletion, restore ovarian function, or extend the window \u2014 it defines the floor below it.",
+      "cost": "$25,000\u2013$45,000 per cycle in the United States, including donor compensation ($5,000\u2013$10,000), agency fees, IVF lab costs, and medications. Czech Republic, Spain, and other European centers with regulated donor programs: \u20ac4,000\u2013\u20ac9,000 per cycle all-in. The international cost gap is the most significant access lever currently available."
     },
     {
       "name": "Genetic and etiologic workup",
       "status": "operational standard",
       "evidence": "High",
       "role": "Tight diagnosis changes counseling, family risk discussion, monitoring, and the logic of what to test next.",
-      "ceiling": "Diagnosis is not cure, but it is still an actionable upgrade over vague labeling."
+      "ceiling": "Diagnosis is not cure, but it is still an actionable upgrade over vague labeling.",
+      "cost": "AMH blood test: $30\u2013$80 direct-pay; often covered with fertility diagnosis code. Karyotype: $200\u2013$400. FMR1 testing: $200\u2013$500. Expanded POI gene panel: $300\u2013$1,500 depending on panel scope. Antral follicle count ultrasound: $150\u2013$400. Full first-line workup bundle: approximately $500\u2013$2,000 out of pocket without insurance."
     },
     {
       "name": "Stress-axis and behavioral intervention",
       "status": "supportive / systems-level",
       "evidence": "Medium",
       "role": "Sleep repair, stress reduction, and related interventions may help functional suppression and symptom burden in selected cases.",
-      "ceiling": "They are not proven human reserve-restoration tools."
+      "ceiling": "They are not proven human reserve-restoration tools.",
+      "cost": "Low to zero marginal cost for behavioral change (sleep hygiene, exercise, load reduction). Therapy: $100\u2013$300/session out of pocket; often covered under mental health parity. Acupuncture for stress: $60\u2013$120/session, rarely covered. The cost-to-evidence ratio here is favorable for symptom management but should not crowd out higher-yield workup."
     },
     {
       "name": "mTOR / reserve-pacing strategies",
       "status": "experimental",
       "evidence": "Low",
       "role": "Preclinical work suggests reserve pacing may be possible by slowing primordial activation or damage accumulation.",
-      "ceiling": "Human efficacy, dosing, durability, and safety remain unresolved."
+      "ceiling": "Human efficacy, dosing, durability, and safety remain unresolved.",
+      "cost": "Not commercially available for this indication. Rapamycin is available off-label at $50\u2013$200/month; some longevity clinics prescribe it for aging indications. Cost of an unproven protocol is real money for an unresolved question \u2014 the ceiling entry applies directly here."
     },
     {
       "name": "Mitochondrial-targeted rescue",
       "status": "experimental",
       "evidence": "Low",
       "role": "Targets ROS load, ATP deficits, and mitophagy failure in the oocyte quality problem set.",
-      "ceiling": "The human evidence base is not yet strong enough for podium status."
+      "ceiling": "The human evidence base is not yet strong enough for podium status.",
+      "cost": "CoQ10 supplements (the most commonly self-administered mitochondrial support): $20\u2013$60/month. Clinical mitochondrial replacement techniques (MRT/spindle transfer) where legal: embedded in IVF costs, typically $15,000\u2013$25,000/cycle at the few licensed centers. Most marketed \u2018mitochondrial supplements\u2019 have no replicated human reproductive evidence."
     },
     {
       "name": "Antifibrotic / stromal remodeling strategies",
       "status": "experimental",
       "evidence": "Low",
       "role": "Attempts to change the ovarian microenvironment when fibrosis and stiffening look causal rather than incidental.",
-      "ceiling": "Still mostly mechanistic and preclinical."
+      "ceiling": "Still mostly mechanistic and preclinical.",
+      "cost": "No validated commercial protocol exists for this indication. Research costs are institutional. Patients paying out of pocket for \u2018anti-fibrotic\u2019 supplements or unvalidated procedures should treat those costs as speculative."
     },
     {
       "name": "Stem cells, exosomes, PRP, and 'ovarian rejuvenation'",
       "status": "experimental / hype-prone",
       "evidence": "Low",
       "role": "Often marketed as rescue or regeneration routes for ovarian function.",
-      "ceiling": "Evidence remains fragmented and nowhere near justification for strong public claims."
+      "ceiling": "Evidence remains fragmented and nowhere near justification for strong public claims.",
+      "cost": "PRP ovarian injection: $2,000\u2013$5,000 per procedure at private fertility clinics; not covered by insurance; no replicated human live birth data. Exosome therapies: $3,000\u2013$10,000+. Stem cell procedures at offshore or unregulated clinics: $10,000\u2013$30,000. The spread between cost and evidence is the widest on this board."
     },
     {
       "name": "Uterine transplantation (UTx)",
       "status": "emerging clinical",
       "evidence": "Medium",
       "role": "Restores gestational capacity in women with absolute uterine factor infertility (AUFI): congenital uterine absence (MRKH), post-hysterectomy from any cause including gynecologic cancer, and uterine loss from C-section complications such as placenta accreta spectrum. Over 80 live births globally confirmed across Gothenburg, Cleveland Clinic, and Baylor programs. UTx does not restore ovarian reserve \u2014 the recipient still needs viable oocytes (own or donor) for IVF. It is a temporary organ: removed after one or two pregnancies to end immunosuppression.",
-      "ceiling": "Requires IVF, lifelong immunosuppression during gestation, living or deceased donor availability, and high-volume surgical center access. Not yet widely available. Application to transwomen remains early experimental with no confirmed live births reported as of 2026."
+      "ceiling": "Requires IVF, lifelong immunosuppression during gestation, living or deceased donor availability, and high-volume surgical center access. Not yet widely available. Application to transwomen remains early experimental with no confirmed live births reported as of 2026.",
+      "cost": "$200,000\u2013$500,000 total procedure cost in the US, encompassing donor evaluation and surgery ($50,000\u2013$100,000 for living donor), recipient surgery ($100,000\u2013$200,000), IVF cycles ($15,000\u2013$30,000 each), immunosuppression medications (~$2,000\u2013$5,000/month during gestation), and removal surgery. Insurance coverage is rare; most recipients are self-pay or in funded research trials. Cleveland Clinic and Baylor have covered some costs within trial protocols. Swedish centers have lower all-in costs due to single-payer coverage of surgical components."
     },
     {
       "name": "C-section rate reduction as uterine preservation",
       "status": "prevention standard",
       "evidence": "High",
       "role": "Placenta accreta spectrum (PAS) risk accumulates directly with each C-section: approximately 0.3% after one, rising above 6% after four or more. Since PAS is the leading cause of emergency peripartum hysterectomy, avoiding unnecessary primary C-sections is the most upstream intervention for preserving gestational capacity across future pregnancies.",
-      "ceiling": "Applies to preventing uterine loss, not restoring it. Does not address congenital or oncologic causes of AUFI."
+      "ceiling": "Applies to preventing uterine loss, not restoring it. Does not address congenital or oncologic causes of AUFI.",
+      "cost": "No direct cost \u2014 this is a clinical decision point, not a product. The downstream cost avoided is the relevant number: an emergency peripartum hysterectomy for PAS costs $50,000\u2013$200,000+ in acute care alone, plus the elimination of all future gestational capacity. The UAF reconstruction pathway (UTx) adds $200,000\u2013$500,000. Appropriate labor support, midwifery access, and VBAC-capable centers reduce unnecessary C-section rates at population scale."
     }
   ],
   "promotionRules": [

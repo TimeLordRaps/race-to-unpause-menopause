@@ -255,6 +255,7 @@ function renderInterventionLandscape(items) {
       <h3>${escapeHtml(item.name)}</h3>
       <p>${escapeHtml(item.role)}</p>
       <div class="detail-row"><strong>Ceiling:</strong> ${escapeHtml(item.ceiling)}</div>
+      ${item.cost ? `<div class="detail-row detail-cost"><strong>Cost:</strong> ${escapeHtml(item.cost)}</div>` : ''}
     </article>
   `).join(''));
 }
